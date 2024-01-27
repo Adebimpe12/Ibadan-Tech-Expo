@@ -7,16 +7,15 @@
 
 .head{
     background-color:rgb(244,244,245);
-    position: fixed;
     height: 100px;
     width: 1520px;
     display: flex;
     border-bottom: 1px solid whitesmoke;
-    box-shadow: 20px 0 100px 0 whitesmoke;
+    box-shadow: 20px 0 100px 0 gray;
     justify-content: space-around;
     align-items: center;
     z-index: 1;
-    margin-top: -100px;
+    margin-top:-100px;
     margin-left: 0;
 }
 img{
@@ -38,14 +37,14 @@ ul, li{
 ul, li, a{
     text-decoration: none;
     padding: 0;
-    color:rgb(35,64,146);
+    color:rgb(34,64,147);
     font-family: Roboto, Helvetica Neue, Arial;
     font-weight: 600;
     font-size:20px;
 }
 
 
-.button1{
+.buttona{
     color:rgb(62,80,131) ;
     background-color: rgb(253, 185, 21);
     border-radius: 5px;
@@ -56,25 +55,38 @@ ul, li, a{
     padding: 0;
 }
 .margin{
-    margin-top: 0;
-    margin-left: 37px;
-    margin-right: 37px;
+    margin-top: 100px;
     background-color: whitesmoke;
-}
-.main img{
-    width: 100%;
-}
-.maiden {
-    width: 30%;
-    color: rgb(35,64,146);
-    width: 100%;
-    font-weight: 600;
-    font-size: larger;
-    font-family: "jost";
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.maiden {
+    color: rgb(35,64,146);
+    font-size: larger;
+    font-family: "jost";
     display: flex;
     justify-content: space-between;
+}
+
+.star{
+    width: 60px;
+    border: 2px solid rgb(0,168,119);
+    border-radius: 50%;
+    animation-name: star;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes star {
+    from{
+        transform: rotate(0deg) ;
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }
 .edition{
     margin-right: -60px;
@@ -87,87 +99,319 @@ ul, li, a{
     font-size: larger;
 }
 
-.maiden img{
-    width: 60px;
-    border: 2px solid rgb(0,168,119);
-    border-radius: 50%;
-}
-.hr{
+.hir{
     width: 25%;
     border-top: 1px solid black;
     margin-top: 15px;
 }
-.button23{
-    display: flex;
-    justify-content: space-around;
+
+.buttonb{
     margin-top: 40px;
+    margin-bottom: 100px;
 }
-#button2{
+#buttonba{
     height: 45px;
     width: 600px;
     border: 0;
-    background-color: rgb(253 185 21) ;
+    background-color: rgb(253, 185, 21);
 }
-#button3{
+#buttonbb{
     width: 600px;
     height: 45px;
-    margin-left: -180px;
     border: 1px solid rgb(35,64,146);
+    color: rgb(35,64,146);
 }
 .venue{
-    border: 2px solid red;
-    width: 1450px;
-    height: 400px;
-    background-image: linear-gradient(to right, rgb(202,144,1),rgb(85,119,206));
+    width: 1250px;
+    height: 300px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right,  rgb(202,144,1), rgb(85,119,206));
     color: white;
-    justify-content: center;
-    align-items: center;
 }
-.venue-text{
-    text-align: center;
-    
-}
-
-.vr{
-    display: flex;
-    border: 2px solid red;
-}
-#vr-text{
-    display: block;
-    width: 50%;
-    border: 2px solid blue;
-    padding-left: 0%;
-    padding-right: 0%;
-    margin-right: 0%;
-}
-#vr-textp{
-    margin-left: 0%;
-    margin-right: 0%;
-    border: 2px solid green;
-    color:rgb(35,64,146);
-    font-weight:500;
+.venue-text {
+    font-weight: 900;
+    font-size:30px ;
+    padding-top: 40px;
 }
 
-.vr-text12{
-    border: 1px solid purple;
-    border-bottom: 1px solid rgb(253 185 21) ;
-    margin-left: 0%;
-    margin-right: 0%;
+.vrtextp{
+    width: 40%;
+    color: rgb(35,64,146);
 }
-#vr-text1{
-    font-weight:900;
-    color:rgb(253 185 21) ;
-    
+
+.vrtextaa{
+    color: rgb(253, 185, 21) ;
+    font-weight: 500;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    width: 40%;
 }
-#vr-text2{
-    color:rgb(35,64,146) ;
-    font-weight: bolder;
-    font-size: 50px;
+
+.vrtextab{
+    color: rgb(35,64,146);
+    font-weight: 900;
+    font-size: 90px;
+    margin-top:-20;
+    padding: 0;
+    width: 40%;
+    border-bottom:2px solid rgb(253, 185, 21) ;
 }
-.vr img{
-    width: 50%;
-    margin-left: 0%;
+
+.vrimg{
+    float: right;
+    margin-top: -400px;
+    width: 700px;
+    margin-bottom: 100px;
 }
+
+.venueb{
+    margin-top: 400px;
+    color: rgb(35,64,146);
+    font-size: 80px;
+    font-weight: 900;
+}
+
 .hr1{
-    color:rgb(253 185 21) ;
+    border-top: 2px solid rgb(253 185 21);
+    
+}
+.international{
+    height: 450px;
+    width: 80%;
+    margin-top: 30px;
+    padding: 0;
+    margin-bottom: 100px;
+    position: absolute;
+}
+
+.intv{
+    position: relative;
+    margin: 100px;
+    color: white;
+    font-size: 30px;
+}
+
+.speak{
+    margin-top: 350px;
+    color: rgb(35,64,146);
+    font-weight: 900;
+    font-size: 60px;
+    border-bottom: 2px solid rgb(253 185 21);
+    margin-bottom: 50px;
+}
+
+.speaka{
+    float: right;
+    margin-top: -100px;
+    font-size: small;
+    color: rgb(35,64,146);
+}
+
+.speakb{
+    color:rgb(35,64,146);
+}
+
+.speakc{
+    width: 24%;
+    font-size: medium;
+}
+
+.speakc h5{
+    text-align: center;
+}
+
+.speakc p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.speakc img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.secure p{
+    width: 30%;
+    margin-bottom: 200px;
+}
+
+.tick{
+    color: rgb(35,64,146);
+    font-weight: 900;
+    font-size: 60px;
+    border-bottom: 2px solid rgb(253 185 21);
+    margin-bottom: 100px;
+}
+
+.secure img{
+    float: right;
+    margin-top: -300px;
+    margin-right: 200px;
+    width: 300px;
+    margin-bottom: 300px;
+}
+
+.price{
+    font-size: 30px;
+    margin-bottom: 200px;
+    color:rgb(35,64,146);
+}
+
+.zuk{
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    height: 550px;
+    color: black;
+    margin-top: 40px;
+}
+
+#enha{
+    font-size: small;
+}
+
+.nat{
+    background-color: rgb(255,205,85);
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    float: right;
+    margin-top:-90px;
+}
+
+.nat a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.elon{
+    background-color: rgb(255,205,85);
+    border-radius: 20px;
+    width: 30%;
+    height: 590px;
+    color: rgb(35,65,147);
+}
+
+#excl{
+    font-size: small;
+}
+
+.net{
+    background-color: rgb(35,65,147);
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    float: right;
+    margin-top:-90px;
+}
+
+.net a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.bezos{
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    height: 550px;
+    color: black;
+    margin-top: 40px;
+}
+
+#enha{
+    font-size: small;
+}
+
+.nat{
+    background-color: rgb(255,205,85);
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    float: right;
+    margin-top:-90px;
+}
+
+.nat a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tech{
+    height: 500px;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to bottom left, rgb(221 94 101) 5% , rgb(19,34,80) 58%) ;
+    margin-bottom: 100px;
+}
+
+.techtext{
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 30%;
+}
+
+.techb{
+    width: 70%;
+}
+
+#techba{
+    margin-top: 220px;
+}
+#techbb{
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
+}
+
+#techbc{
+    margin-top: -600px;
+    margin-left: 800px;
+}
+
+.tech h2{
+    font-weight: bolder;
+}
+.partners, .media, .community, .gold{
+    margin-left: 100px;
+    color:rgb(35,64,146); 
+    font-size: 30px;
+}
+marquee{
+    margin-bottom: 200px;
+}
+
+footer{
+    background-color: rgb(19,34,80);
+    color: white;
+    height: 80px;
+}
+
+.follow{
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: large;
+    height: 40px;
+    width: 30%;
+    padding: 0;
+}
+
+.nave{
+    margin-top: -40px;
+}
+.nave li a{
+    color: white;
+    font-weight: lighter;
+}
+
+.bak{
+    background-color: whitesmoke;
 }
